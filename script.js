@@ -14,7 +14,7 @@ streetnumber: 23,
 street: 'Red Street',
 city: 'Princeton',
 getLocation:function(){
-  console.log(myAddress.streetnumber + " " +myAddress.street + "," + myAddress.city )
+  console.log('This is an address:\n'+myAddress.streetnumber + " " +myAddress.street + "," + myAddress.city )
 }
 };
 
@@ -30,3 +30,4 @@ getLocation:function(){
 for (const property in myAddress){
 console.log(property + '==>' + myAddress[property]);
 }
+
