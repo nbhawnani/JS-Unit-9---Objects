@@ -28,5 +28,5 @@ getLocation:function(){
 // Using for ... in Loop to access the property/method names and retrieving  the property/method values using dot or square notation:
 
 for (const property in myAddress){
-console.log(property + ':' + myAddress[property]);
+console.log(property + '==>' + myAddress[property]);
 }
