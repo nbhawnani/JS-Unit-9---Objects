@@ -38,7 +38,7 @@ const Person={
   lname:'Harry',
   age:16,
   hobbies:['reading','painting','playing guitar'],
-  canDrive:true,
+  canDrive:false,
   isMinor:function(){
     if (Person.age<18){
       return(Person.fname + ' is a minor');
@@ -48,9 +48,23 @@ const Person={
   },
   getFullName:function(){
     return (Person.fname + " " + Person.lname)
+  },
+  getCanDrive:function(){
+    if (Person.canDrive){
+      return('can drive')
+    }else{
+      return('cannot drive')
+    }
   }
+  
 }
 
-console.log(Person.getFullName())
-console.log(Person.isMinor())
+//console.log(Person.getFullName());
+//console.log(Person.isMinor());
+
+for (let prop in Person){
+  //console.log(prop,Person[prop]);
+}
+
+console.log(Person.getCanDrive())
 
