@@ -1,3 +1,4 @@
+/*
 // 1st Way using new Object() method:
 let myCar = new Object();
 myCar.make = 'Ford';
@@ -27,7 +28,29 @@ getLocation:function(){
 
 // Using for ... in Loop to access the property/method names and retrieving  the property/method values using dot or square notation:
 
-for (const property in myAddress){
-console.log(property + '==>' + myAddress[property]);
+for (const propertyname in myAddress){
+console.log(propertyname + '==>' + myAddress[propertyname]);
 }
+*/
+
+const Person={
+  fname:'John',
+  lname:'Harry',
+  age:16,
+  hobbies:['reading','painting','playing guitar'],
+  canDrive:true,
+  isMinor:function(){
+    if (Person.age<18){
+      return(Person.fname + ' is a minor');
+    }else{
+      return(Person.fname + ' is an adult');
+    }
+  },
+  getFullName:function(){
+    return (Person.fname + " " + Person.lname)
+  }
+}
+
+console.log(Person.getFullName())
+console.log(Person.isMinor())
 
