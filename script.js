@@ -47,7 +47,7 @@ const Person={
     }
   },
   getFullName:function(){
-    return (Person.fname + " " + Person.lname)
+    return (Person.fname + " " + this.lname)
   },
   getCanDrive:function(){
     if (Person.canDrive){
@@ -66,5 +66,5 @@ for (let prop in Person){
   //console.log(prop,Person[prop]);
 }
 
-console.log(Person.getCanDrive())
+console.log(Person.getFullName() + " " + Person.getCanDrive())
 
